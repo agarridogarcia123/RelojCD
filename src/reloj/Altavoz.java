@@ -42,13 +42,7 @@ public class Altavoz {
     public static void alarmaSonando(){
          try {
            melody = AudioSystem.getClip();
-           try {
-               melody.open(AudioSystem.getAudioInputStream(new File("")));
-           } catch (UnsupportedAudioFileException ex) {
-               Logger.getLogger(Altavoz.class.getName()).log(Level.SEVERE, null, ex);
-           } catch (IOException ex) {
-               Logger.getLogger(Altavoz.class.getName()).log(Level.SEVERE, null, ex);
-           }
+           
        } catch (LineUnavailableException ex) {
            System.out.println("Error no audio:"+ex.getMessage());
        }
