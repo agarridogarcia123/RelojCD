@@ -34,7 +34,7 @@ public class Reloj {
                 
                 if (alarmHour.getMinute() == LocalTime.now().getMinute() && alarmHour.getHour() == LocalTime.now().getHour()&& Display.ledAlarm==true) {
                     JOptionPane.showMessageDialog(null, "ALARMA SONANDO!!!");
-                    Altavoz.alarmaSonando();
+                    Altavoz.playSound();
                     
 
                 } else {

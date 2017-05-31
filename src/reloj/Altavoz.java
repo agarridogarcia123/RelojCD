@@ -39,7 +39,7 @@ public class Altavoz {
     /**
      * hace que suene la alarma cuando es la hora
      */
-    public static void alarmaSonando(){
+    public static void playSound(){
          try {
            melody = AudioSystem.getClip();
            
